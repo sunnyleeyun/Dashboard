@@ -8,14 +8,21 @@
 </div>
 
 <% @post.comments.each do |comment|%>
+    <div class="row">
     <div class="col-md-6 well"
-    <p>
-        <%= comment.content%>
-    </p>
+        <p>
+            <%= comment.content%>
+        </p>
+    </div>
     </div>
 <% end %>
 <br>
 <br>
+
+<hr>
+<div class="row">
+    <%= link_to 'go back to all posts', posts_path%>
+</div>
 
 
 <%= link_to 'go back to all posts', posts_path %>
